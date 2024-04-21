@@ -8,6 +8,6 @@ This project implements a simple toggle feature for switching between dark mode 
 2. Click on the displayed text to toggle between dark mode and light mode.
 
 ### Hosted Link
-You can try out the toggle feature live by visiting the hosted version of the project [here](#).
+You can try out the toggle feature live by visiting the hosted version of the project [here](https://siddharth1818.github.io/JavaScript/Toggle_Project/index.html).
 
 That's it! Enjoy toggling between modes.
