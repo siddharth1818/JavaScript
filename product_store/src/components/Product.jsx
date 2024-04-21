@@ -43,10 +43,10 @@ export const Product = () => {
                 <div key={product.id} className='my-product'>
                     <span>{product.name}</span>
                     <span>{product.price}</span>
-                    <span>
-                        <button className="remove-btn" onClick={() => handleRemoveProduct(product)}>-</button>
-                        <span className='quantity-btn'>{getQuantity(product.id)}</span>
-                        <button className="add-btn" onClick={() => handleAddProduct(product)}>+</button>
+                    <span className='group-btn'>
+                        <button  onClick={() => handleRemoveProduct(product)}>-</button>
+                        <span>{getQuantity(product.id)}</span>
+                        <button onClick={() => handleAddProduct(product)}>+</button>
                     </span>
                 </div>
             ))}

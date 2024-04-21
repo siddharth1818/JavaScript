@@ -11,13 +11,14 @@ export const Cart = ({cartItems}) => {
         <div className="cart">
         <p>Your Shopping cart</p>
         {cartItems.length > 0 ? cartItems.map(item => (
-        item.quantity ? <div key={item.id} className="cartItem" >
+        item.quantity ? <div key={item.id} className="cartItemAndTotal" >
             <span>{item.name}</span>
             <span>{`${item.quantity} x ${item.price}`}</span>
         </div> : null
     )): null}
-         <div>
-           <p>Total : {calculateTotal() > 0 ? calculateTotal(): 0}</p> 
+         <div className="cartItemAndTotal">
+           <span> Total : </span>
+           <span>{calculateTotal() > 0 ? calculateTotal(): 0}</span>
         </div>
     </div>
     </div>
